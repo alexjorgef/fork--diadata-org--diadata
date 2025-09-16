@@ -18,7 +18,8 @@ spec:
           image: dia.tradesblockservice.dev:latest
           imagePullPolicy: Never
           command: ["tradesBlockService"]
-          args: ["-historical=true", "-testing=true"]
+          # args: ["-historical=true", "-testing=true"]
+          args: ["-historical=true", "-testing=false"]
           env:
             - name: USE_ENV
               value: "true"
@@ -41,6 +42,8 @@ spec:
             - name: KAFKAURL
               value: "data-kafka.default.svc.cluster.local:9094"
             - name: TRADE_VOLUME_THRESHOLD_EXPONENT
+              value: "4"
+            - name: TRADE_VOLUME_THRESHOLD_USD_EXPONENT
               value: "4"
       initContainers:
         - name: check-postgres-connection

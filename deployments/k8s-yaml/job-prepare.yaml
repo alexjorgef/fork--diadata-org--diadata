@@ -7,6 +7,7 @@ spec:
   template:
     spec:
       containers:
+        # cmd/services/blockchainservice/main.go
         - name: job-prepare-blockchainservice
           image: dia.blockchainservice.dev:latest
           imagePullPolicy: IfNotPresent
@@ -39,6 +40,8 @@ spec:
               value: "password"
             - name: POSTGRES_DB
               value: "postgres"
+            - name: REDISURL
+              value: "data-redis.default.svc.cluster.local:6379"
         - name: job-prepare-assetcollectionservice-nonethassets
           image: dia.assetcollectionservice.dev:latest
           imagePullPolicy: Never
@@ -56,6 +59,8 @@ spec:
               value: "password"
             - name: POSTGRES_DB
               value: "postgres"
+            - name: REDISURL
+              value: "data-redis.default.svc.cluster.local:6379"
         - name: job-prepare-assetcollectionservice-fiatassets
           image: dia.assetcollectionservice.dev:latest
           imagePullPolicy: Never
@@ -72,6 +77,8 @@ spec:
               value: "password"
             - name: POSTGRES_DB
               value: "postgres"
+            - name: REDISURL
+              value: "data-redis.default.svc.cluster.local:6379"
       initContainers:
         - name: check-postgres-connection
           image: public.ecr.aws/docker/library/postgres:15-alpine

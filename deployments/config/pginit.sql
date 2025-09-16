@@ -269,9 +269,19 @@ CREATE TABLE exchange_pairs (
 
 
 
+CREATE TABLE plans (
+    plan_id SERIAL PRIMARY KEY,
+    plan_name VARCHAR(50) NOT NULL UNIQUE,
+    plan_description TEXT,
+    plan_price NUMERIC(10, 2) NOT NULL,
+    plan_features TEXT
+);
+
+ALTER TABLE plans ADD COLUMN total_feeds integer default 3;
+ALTER TABLE plans ADD COLUMN total_oracles integer default 3;
 
 
- CREATE TABLE customers (
+CREATE TABLE customers (
     customer_id SERIAL PRIMARY KEY,
     email VARCHAR(255) NOT NULL,
     account_creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -398,18 +408,6 @@ CREATE TABLE loop_payment_responses (
     invoice_id TEXT,
     metadata JSONB DEFAULT '{}'::jsonb
 );
-
-
-CREATE TABLE plans (
-    plan_id SERIAL PRIMARY KEY,
-    plan_name VARCHAR(50) NOT NULL UNIQUE,
-    plan_description TEXT,
-    plan_price NUMERIC(10, 2) NOT NULL,
-    plan_features TEXT
-);
-
-ALTER TABLE plans ADD COLUMN total_feeds integer default 3;
-ALTER TABLE plans ADD COLUMN total_oracles integer default 3;
 
 
 
