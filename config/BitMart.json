@@ -50,6 +50,12 @@
         },
         {
             "Exchange": "BitMart",
+            "Ignore": false,
+            "ForeignName": "ASTER_USDT",
+            "Symbol": "ASTER"
+        },
+        {
+            "Exchange": "BitMart",
             "ForeignName": "ASTR_USDT",
             "Ignore": false,
             "Symbol": "ASTR"
@@ -369,6 +375,12 @@
         {
             "Exchange": "BitMart",
             "Ignore": false,
+            "ForeignName": "HYPE_USDT",
+            "Symbol": "HYPE"
+        },
+        {
+            "Exchange": "BitMart",
+            "Ignore": false,
             "ForeignName": "KAITO_USDT",
             "Symbol": "KAITO"
         },
@@ -464,6 +476,12 @@
         },
         {
             "Exchange": "BitMart",
+            "ForeignName": "MNT_USDT",
+            "Ignore": false,
+            "Symbol": "MNT"
+        },
+        {
+            "Exchange": "BitMart",
             "ForeignName": "MOG_USDT",
             "Ignore": false,
             "Symbol": "MOG"
@@ -485,6 +503,12 @@
             "ForeignName": "NEAR_USDT",
             "Ignore": false,
             "Symbol": "NEAR"
+        },
+        {
+            "Exchange": "BitMart",
+            "ForeignName": "NEIRO_USDT",
+            "Ignore": false,
+            "Symbol": "NEIRO"
         },
         {
             "Exchange": "BitMart",
@@ -605,6 +629,12 @@
             "Ignore": false,
             "ForeignName": "SILO_USDT",
             "Symbol": "SILO"
+        },
+        {
+            "Exchange": "BitMart",
+            "Ignore": false,
+            "ForeignName": "SKY_USDT",
+            "Symbol": "SKY"
         },
         {
             "Exchange": "BitMart",

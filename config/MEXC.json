@@ -73,6 +73,18 @@
             "Ignore": false
         },
         {
+            "Exchange": "MEXC",
+            "Ignore": false,
+            "ForeignName": "ASTERUSDT",
+            "Symbol": "ASTER"
+        },
+        {
+            "Exchange": "MEXC",
+            "Ignore": false,
+            "ForeignName": "ASTERUSDC",
+            "Symbol": "ASTER"
+        },
+        {
             "Symbol": "ASTR",
             "ForeignName": "ASTRUSDT",
             "Exchange": "MEXC",
@@ -489,6 +501,18 @@
         {
             "Exchange": "MEXC",
             "Ignore": false,
+            "ForeignName": "HYPEUSDT",
+            "Symbol": "HYPE"
+        },
+        {
+            "Exchange": "MEXC",
+            "Ignore": false,
+            "ForeignName": "HYPEUSDC",
+            "Symbol": "HYPE"
+        },
+        {
+            "Exchange": "MEXC",
+            "Ignore": false,
             "ForeignName": "IMXUSDT",
             "Symbol": "IMX"
         },
@@ -655,6 +679,12 @@
             "Ignore": false
         },
         {
+            "Symbol": "MNT",
+            "ForeignName": "MNTUSDT",
+            "Exchange": "MEXC",
+            "Ignore": false
+        },
+        {
             "Symbol": "MOG",
             "ForeignName": "MOGUSDT",
             "Exchange": "MEXC",
@@ -691,6 +721,12 @@
             "Symbol": "NEIROETH"
         },
         {
+            "Exchange": "MEXC",
+            "Ignore": false,
+            "ForeignName": "NEIROCTOUSDT",
+            "Symbol": "NEIROCTO"
+        },
+        {
             "Symbol": "NETT",
             "ForeignName": "NETTUSDT",
             "Exchange": "MEXC",
@@ -723,6 +759,12 @@
         {
             "Symbol": "OP",
             "ForeignName": "OPUSDT",
+            "Exchange": "MEXC",
+            "Ignore": false
+        },
+        {
+            "Symbol": "OPENX",
+            "ForeignName": "OPENXUSDT",
             "Exchange": "MEXC",
             "Ignore": false
         },
@@ -889,6 +931,12 @@
             "Symbol": "SKI"
         },
         {
+            "Exchange": "MEXC",
+            "Ignore": false,
+            "ForeignName": "SKYUSDT",
+            "Symbol": "SKY"
+        },
+        {
             "Symbol": "SOL",
             "ForeignName": "SOLUSDT",
             "Exchange": "MEXC",
@@ -1053,6 +1101,12 @@
         {
             "Symbol": "USDP",
             "ForeignName": "USDPUSDT",
+            "Exchange": "MEXC",
+            "Ignore": false
+        },
+        {
+            "Symbol": "USDUC",
+            "ForeignName": "USDUCUSDT",
             "Exchange": "MEXC",
             "Ignore": false
         },

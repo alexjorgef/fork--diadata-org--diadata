@@ -302,6 +302,18 @@
         },
         {
             "Exchange": "Binance",
+            "Ignore": false,
+            "ForeignName": "NEIROUSDT",
+            "Symbol": "NEIRO"
+        },
+        {
+            "Exchange": "Binance",
+            "Ignore": false,
+            "ForeignName": "NEIROUSDC",
+            "Symbol": "NEIRO"
+        },
+        {
+            "Exchange": "Binance",
             "ForeignName": "OPUSDT",
             "Ignore": false,
             "Symbol": "OP"
@@ -401,6 +413,18 @@
             "ForeignName": "SHIBFDUSD",
             "Ignore": false,
             "Symbol": "SHIB"
+        },
+        {
+            "Exchange": "Binance",
+            "Ignore": false,
+            "ForeignName": "SKYUSDT",
+            "Symbol": "SKY"
+        },
+        {
+            "Exchange": "Binance",
+            "Ignore": false,
+            "ForeignName": "SKYUSDC",
+            "Symbol": "SKY"
         },
         {
             "Exchange": "Binance",

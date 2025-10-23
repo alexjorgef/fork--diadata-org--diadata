@@ -146,6 +146,12 @@
         },
         {
             "Exchange": "GateIO",
+            "Ignore": false,
+            "ForeignName": "ASTER_USDT",
+            "Symbol": "ASTER"
+        },
+        {
+            "Exchange": "GateIO",
             "ForeignName": "ASTR_USDT",
             "Ignore": false,
             "Symbol": "ASTR"
@@ -1220,6 +1226,12 @@
         },
         {
             "Exchange": "GateIO",
+            "Ignore": false,
+            "ForeignName": "HYPE_USDT",
+            "Symbol": "HYPE"
+        },
+        {
+            "Exchange": "GateIO",
             "ForeignName": "ICP_USDT",
             "Ignore": false,
             "Symbol": "ICP"
@@ -1856,6 +1868,12 @@
         },
         {
             "Exchange": "GateIO",
+            "Ignore": false,
+            "ForeignName": "NEIROCTO_USDT",
+            "Symbol": "NEIROCTO"
+        },
+        {
+            "Exchange": "GateIO",
             "ForeignName": "NEO_BTC",
             "Ignore": false,
             "Symbol": "NEO"
@@ -2423,6 +2441,12 @@
             "ForeignName": "SKM_USDT",
             "Ignore": false,
             "Symbol": "SKM"
+        },
+        {
+            "Exchange": "GateIO",
+            "Ignore": false,
+            "ForeignName": "SKY_USDT",
+            "Symbol": "SKY"
         },
         {
             "Exchange": "GateIO",

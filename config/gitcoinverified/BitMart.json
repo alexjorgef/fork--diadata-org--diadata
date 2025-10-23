@@ -55,6 +55,12 @@
             "Address": "0x594DaaD7D77592a2b97b725A7AD59D7E188b5bFa"
         },
         {
+            "Exchange": "BitMart",
+            "Symbol": "ASTER",
+            "Blockchain": "BinanceSmartChain",
+            "Address": "0x000Ae314E2A2172a039B26378814C252734f556A"
+        },
+        {
             "Symbol": "ASTR",
             "Exchange": "BitMart",
             "Blockchain": "Astar",
@@ -350,6 +356,12 @@
         },
         {
             "Exchange": "BitMart",
+            "Symbol": "HYPE",
+            "Blockchain": "Hyperliquid",
+            "Address": "0x0d01dc56dcaaca66ad901c959b4011ec"
+        },
+        {
+            "Exchange": "BitMart",
             "Symbol": "KAITO",
             "Blockchain": "Base",
             "Address": "0x98d0baa52b2D063E780DE12F615f963Fe8537553"
@@ -463,6 +475,12 @@
             "Address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2"
         },
         {
+            "Symbol": "MNT",
+            "Exchange": "BitMart",
+            "Blockchain": "Mantle",
+            "Address": "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000"
+        },
+        {
             "Symbol": "MOG",
             "Exchange": "BitMart",
             "Blockchain": "Ethereum",
@@ -485,6 +503,12 @@
             "Exchange": "BitMart",
             "Blockchain": "NEAR",
             "Address": "0x0000000000000000000000000000000000000000"
+        },
+        {
+            "Exchange": "BitMart",
+            "Symbol": "NEIRO",
+            "Blockchain": "Ethereum",
+            "Address": "0x812Ba41e071C7b7fA4EBcFB62dF5F45f6fA853Ee"
         },
         {
             "Exchange": "BitMart",

@@ -386,6 +386,12 @@
         },
         {
             "Exchange": "CoinBase",
+            "ForeignName": "MANTLE-USD",
+            "Ignore": false,
+            "Symbol": "MANTLE"
+        },
+        {
+            "Exchange": "CoinBase",
             "Ignore": false,
             "ForeignName": "MKR-USD",
             "Symbol": "MKR"
@@ -591,8 +597,20 @@
         {
             "Exchange": "CoinBase",
             "Ignore": false,
+            "ForeignName": "USDC-GBP",
+            "Symbol": "USDC"
+        },
+        {
+            "Exchange": "CoinBase",
+            "Ignore": false,
             "ForeignName": "USDS-USD",
             "Symbol": "USDS"
+        },
+        {
+            "Exchange": "CoinBase",
+            "Ignore": false,
+            "ForeignName": "USDT-GBP",
+            "Symbol": "USDT"
         },
         {
             "Exchange": "CoinBase",

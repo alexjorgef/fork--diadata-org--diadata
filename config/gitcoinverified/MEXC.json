@@ -67,6 +67,12 @@
             "Address": "0x912CE59144191C1204E64559FE8253a0e49E6548"
         },
         {
+            "Exchange": "MEXC",
+            "Symbol": "ASTER",
+            "Blockchain": "BinanceSmartChain",
+            "Address": "0x000Ae314E2A2172a039B26378814C252734f556A"
+        },
+        {
             "Symbol": "ASTR",
             "Exchange": "MEXC",
             "Blockchain": "Astar",
@@ -458,6 +464,12 @@
         },
         {
             "Exchange": "MEXC",
+            "Symbol": "HYPE",
+            "Blockchain": "Hyperliquid",
+            "Address": "0x0d01dc56dcaaca66ad901c959b4011ec"
+        },
+        {
+            "Exchange": "MEXC",
             "Symbol": "IMX",
             "Blockchain": "Immutable",
             "Address": "0x0000000000000000000000000000000000000000"
@@ -607,6 +619,12 @@
             "Address": "0xB1a03EdA10342529bBF8EB700a06C60441fEf25d"
         },
         {
+            "Symbol": "MNT",
+            "Exchange": "MEXC",
+            "Blockchain": "Mantle",
+            "Address": "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000"
+        },
+        {
             "Symbol": "MOG",
             "Exchange": "MEXC",
             "Blockchain": "Ethereum",
@@ -667,10 +685,22 @@
             "Address": "0x0B010000b7624eb9B3DfBC279673C76E9D29D5F7"
         },
         {
+            "Exchange": "MEXC",
+            "Symbol": "NEIROCTO",
+            "Blockchain": "Ethereum",
+            "Address": "0x812Ba41e071C7b7fA4EBcFB62dF5F45f6fA853Ee"
+        },
+        {
             "Symbol": "OP",
             "Exchange": "MEXC",
             "Blockchain": "Optimism",
             "Address": "0x4200000000000000000000000000000000000042"
+        },
+        {
+            "Symbol": "OPENX",
+            "Exchange": "MEXC",
+            "Blockchain": "Base",
+            "Address": "0xA66B448f97CBf58D12f00711C02bAC2d9EAC6f7f"            
         },
         {
             "Symbol": "ORDI",
@@ -821,6 +851,12 @@
             "Symbol": "SKI",
             "Blockchain": "Base",
             "Address": "0x768BE13e1680b5ebE0024C42c896E3dB59ec0149"
+        },
+        {
+            "Exchange": "MEXC",
+            "Symbol": "SKY",
+            "Blockchain": "Ethereum",
+            "Address": "0x56072C95FAA701256059aa122697B133aDEd9279"
         },
         {
             "Symbol": "SOL",
@@ -989,6 +1025,12 @@
             "Exchange": "MEXC",
             "Blockchain": "Ethereum",
             "Address": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+        },
+        {
+            "Exchange": "MEXC",
+            "Symbol": "USDUC",
+            "Blockchain": "Solana",
+            "Address": "CB9dDufT3ZuQXqqSfa1c5kY935TEreyBw9XJXxHKpump"
         },
         {
             "Symbol": "VELA",

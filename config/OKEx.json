@@ -1814,6 +1814,12 @@
         },
         {
             "Exchange": "OKEx",
+            "ForeignName": "NEIRO-USDT",
+            "Ignore": false,
+            "Symbol": "NEIRO"
+        },
+        {
+            "Exchange": "OKEx",
             "ForeignName": "NEO-BTC",
             "Ignore": false,
             "Symbol": "NEO"
@@ -2375,6 +2381,12 @@
             "ForeignName": "SHOW-USDT",
             "Ignore": false,
             "Symbol": "SHOW"
+        },
+        {
+            "Exchange": "OKEx",
+            "Ignore": false,
+            "ForeignName": "SKY-USDT",
+            "Symbol": "SKY"
         },
         {
             "Exchange": "OKEx",

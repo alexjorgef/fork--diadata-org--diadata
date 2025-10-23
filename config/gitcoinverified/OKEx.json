@@ -337,6 +337,12 @@
             "Address": "0x5d65D971895Edc438f465c17DB6992698a52318D"
         },
         {
+            "Exchange": "OKEx",
+            "Symbol": "NEIRO",
+            "Blockchain": "Ethereum",
+            "Address": "0x812Ba41e071C7b7fA4EBcFB62dF5F45f6fA853Ee"
+        },
+        {
             "Symbol": "OP",
             "Exchange": "OKEx",
             "Blockchain": "Optimism",
@@ -425,6 +431,12 @@
             "Exchange": "OKEx",
             "Blockchain": "Ethereum",
             "Address": "0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE"
+        },
+        {
+            "Exchange": "OKEx",
+            "Symbol": "SKY",
+            "Blockchain": "Ethereum",
+            "Address": "0x56072C95FAA701256059aa122697B133aDEd9279"
         },
         {
             "Symbol": "SNC",

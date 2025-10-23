@@ -447,6 +447,18 @@
         {
             "Exchange": "Kraken",
             "Ignore": false,
+            "ForeignName": "NEIROUSD",
+            "Symbol": "NEIRO"
+        },
+        {
+            "Exchange": "Kraken",
+            "Ignore": false,
+            "ForeignName": "NEIROEUR",
+            "Symbol": "NEIRO"
+        },
+        {
+            "Exchange": "Kraken",
+            "Ignore": false,
             "ForeignName": "ONDOUSD",
             "Symbol": "ONDO"
         },
@@ -638,6 +650,12 @@
         },
         {
             "Exchange": "Kraken",
+            "ForeignName": "USDCGBP",
+            "Ignore": false,
+            "Symbol": "USDC"
+        },
+        {
+            "Exchange": "Kraken",
             "ForeignName": "USDCUSD",
             "Ignore": false,
             "Symbol": "USDC"
@@ -653,6 +671,12 @@
             "Ignore": false,
             "ForeignName": "USDSUSD",
             "Symbol": "USDS"
+        },
+        {
+            "Exchange": "Kraken",
+            "ForeignName": "USDTGBP",
+            "Ignore": false,
+            "Symbol": "USDT"
         },
         {
             "Exchange": "Kraken",
