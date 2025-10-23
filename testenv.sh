@@ -88,23 +88,35 @@ function _build_ifnotexist(){
     else
         minikube_docker_query="$(minikube -p "${minikube_profile}" ssh -- "docker images -q $2:latest" 2> /dev/null)"
         if [[ "${minikube_docker_query}" == "" ]]; then
-            echo "Image $2 is not present, building to minikube docker env..."
-            if [[ "$minikube_driver" == "docker" ]]; then
-                eval "$(minikube -p "${minikube_profile}" docker-env)"
-                docker_build_output=$(docker buildx build -f "build/$1" -t "$2:latest" . 2>&1)
-                docker_build_status=$?
-                # echo "docker buildx build -f build/$1 -t $2:latest ."
-                # docker buildx build -f "build/$1" -t "$2:latest" .
-                eval "$(minikube -p "${minikube_profile}" docker-env --unset)"
-                if [ $docker_build_status -ne 0 ]; then
-                    echo "Image $2 build failed:"
-                    echo "$docker_build_output"
-                    exit $docker_build_status
+            if [[ -f "build-artifacts/$2.tar.gz" ]]; then
+                echo "Image tarball build-artifacts/$2.tar.gz exists. Loading into Minikube..."
+                if [[ "$minikube_driver" == "docker" ]]; then
+                    eval "$(minikube -p "${minikube_profile}" docker-env)"
+                    docker load -i "build-artifacts/$2.tar.gz"
+                    eval "$(minikube -p "${minikube_profile}" docker-env --unset)"
                 else
-                    echo "Image $2 build succeeded"
+                    minikube -p "${minikube_profile}" image load "build-artifacts/$2.tar.gz"
                 fi
+                echo "Image $2 loaded successfully"
             else
-                minikube -p "${minikube_profile}" image build -f "build/$1" -t "$2:latest" .
+                echo "Image $2 is not present, building to minikube docker env..."
+                if [[ "$minikube_driver" == "docker" ]]; then
+                    eval "$(minikube -p "${minikube_profile}" docker-env)"
+                    docker_build_output=$(docker buildx build -f "build/$1" -t "$2:latest" . 2>&1)
+                    docker_build_status=$?
+                    # echo "docker buildx build -f build/$1 -t $2:latest ."
+                    # docker buildx build -f "build/$1" -t "$2:latest" .
+                    eval "$(minikube -p "${minikube_profile}" docker-env --unset)"
+                    if [ $docker_build_status -ne 0 ]; then
+                        echo "Image $2 build failed:"
+                        echo "$docker_build_output"
+                        exit $docker_build_status
+                    else
+                        echo "Image $2 build succeeded"
+                    fi
+                else
+                    minikube -p "${minikube_profile}" image build -f "build/$1" -t "$2:latest" .
+                fi
             fi
         else
             echo "Image $2 is present"
@@ -213,7 +225,8 @@ function main() {
 
     # Variables
     local minikube_profile=dia
-    local minikube_k8s_version=v1.25.7
+    # local minikube_k8s_version=v1.25.7
+    local minikube_k8s_version=v1.28
     # local minikube_k8s_version=v1.33.1
     local minikube_hw_cpus=4
     local minikube_hw_ram=8g

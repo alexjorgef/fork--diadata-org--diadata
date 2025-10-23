@@ -18,8 +18,8 @@ spec:
           image: dia.tradesblockservice.dev:latest
           imagePullPolicy: Never
           command: ["tradesBlockService"]
-          # args: ["-historical=true", "-testing=true"]
-          args: ["-historical=true", "-testing=false"]
+          args: ["-historical=true", "-testing=true"]
+          # args: ["-historical=true", "-testing=false"]
           env:
             - name: USE_ENV
               value: "true"

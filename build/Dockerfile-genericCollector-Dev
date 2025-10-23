@@ -1,4 +1,4 @@
-FROM dia.build-122.dev:latest as build
+FROM dia.build-122.dev:latest AS build
 
 WORKDIR $GOPATH/src/
 COPY ./cmd/exchange-scrapers/collector ./

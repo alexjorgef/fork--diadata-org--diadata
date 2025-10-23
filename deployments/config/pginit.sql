@@ -57,6 +57,22 @@ CREATE TABLE exchange (
     UNIQUE (name)
 );
 
+CREATE TABLE nftexchange (
+    exchange_id UUID DEFAULT gen_random_uuid(),
+    name text NOT NULL,
+    centralized boolean default false,
+    bridge boolean default false,
+    contract text,
+    blockchain text,
+    rest_api text,
+    ws_api text,
+    pairs_api text,
+    watchdog_delay numeric NOT NULL,
+    scraper_active boolean,
+    UNIQUE(exchange_id),
+    UNIQUE (name)
+);
+
 CREATE TABLE pool (
     pool_id UUID DEFAULT gen_random_uuid(),
     exchange text NOT NULL,
