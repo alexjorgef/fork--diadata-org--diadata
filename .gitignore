@@ -37,5 +37,6 @@ vendor/
 scripts/bifrost/node_modules
 scripts/bifrost/yarn.lock
 
+# Test env
 .testenv.local
 /build-artifacts
